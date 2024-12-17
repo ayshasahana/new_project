@@ -1,0 +1,156 @@
+.footer {
+  background-color: #F3F3F3;
+  padding: 5%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+/* First Column */
+.description-column {
+  flex: 0 0 50%; 
+  padding-right: 82px;
+}
+
+/* Other Three Columns */
+.column {
+  flex: 1; 
+  min-width: 150px; 
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.column h3 {
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  color: #666666;
+  font-size: 13px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.column ul li:hover {
+  color: #4a90e2;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info p {
+  color: #666666;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  span {
+    font-size: 13px;
+  }
+}
+
+.contact-item a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 13px;
+}
+
+.contact-item a:hover {
+  color: #4a90e2;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: block;
+}
+
+.social-icons img {
+  width: 19px;
+  /* height: 24px; */
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .description-column {
+    flex: 0 0 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .column {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .columns-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+
+  .contact-item,
+  .social-icons {
+    justify-content: flex-start;
+  }
+}

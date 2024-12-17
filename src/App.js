@@ -1,11 +1,22 @@
 import React from "react";
-import Footer from "./components/Footer";
+// import About from './pages/About';
+// import Homepage from './pages/Homepage';
+import Products from './pages/Products';
+
+
+
 
 function App() {
   return (
     <div>
 
-      <Footer />
+      
+      {/* <About /> */}
+      {/* <Homepage/> */}
+      <Products/>
+    
+      
+
     </div>
   );
 }

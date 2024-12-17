@@ -1,0 +1,377 @@
+/* General header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  /* padding: 10px 30px; */
+}
+
+/* Top section of the header */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 8px 0; */
+}
+
+/* Logo section */
+.header-logo1 {
+  flex: 1;
+  padding: 10px 20px;
+  margin-left: 30px;
+}
+
+.header-logo1 .logo {
+  width: 220px; /* Adjust size of the main logo */
+  height: auto;
+  margin-left: 15px;
+}
+
+.header-logo2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.header-logo2 .logo {
+  width: 15px; /* Adjust size of the mail logo */
+  height: auto;
+  gap: 15px;
+}
+.call-number {
+  margin-left: 10px; /* Adds space between the call logo and the number */
+  font-size: 14px; /* Adjust font size if needed */
+  color: #333; /* Customize text color */
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.email {
+  margin-left: 10px; /* Adds space between the letter logo and the email */
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header-logo3 {
+  display: flex;
+  justify-content: flex-end; /* Align flags to the right */
+  align-items: center;
+  background-color: rgb(241, 246, 248); /*Background for the flags section*/
+  border-radius: 2%; /* Rounded edges */
+  flex-direction: row; /* Horizontal alignment of flags */
+  margin-bottom: 10px; /* Space below the flags section */
+  margin-right: 70px; /* Space to the right of the flags section */
+  /* border-radius: 2%; */
+
+  
+}
+.logo_1{
+  display: flex;
+  justify-content: flex-end; /* Align flags to the right */
+  align-items: center;
+  background-color: rgb(241, 246, 248); /*Background for the flags section*/
+  border-radius: 2%; /* Rounded edges */
+  flex-direction: row; /* Horizontal alignment of flags */
+  margin-bottom: 10px; /* Space below the flags section */
+  margin-right: 10px; /* Space to the right of the flags section */
+  /* border-radius: 2%; */
+}
+.header-logo3 .logo {
+  width: 35px; /* Size of the flag icons */
+  height: auto; /* Maintain aspect ratio */
+  /* background-color: rgb(242, 247, 245); Background color for each logo */
+  padding: 5px; /* Reduced padding inside each logo */
+  margin-right: 5px; /* Reduced spacing between logos */
+}
+
+.header-logo3 .logo:last-child {
+  margin-right: 0; /* Remove margin for the last flag */
+}
+
+
+/* Navigation menu */
+.header-nav {
+  display: flex;
+  justify-content: right;
+  background-color: #e91e63; /* Add a background color */
+  padding: 10px 0;
+  
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  transition: color 0.3s ease;
+  margin-top: 10px;
+  
+}
+
+.nav-item:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/*RESPONSIVE DESIGN*/
+/* Mobile Devices */
+@media (max-width: 480px) {
+  /* Top section of the header */
+  .header-top {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Space between items */
+  }
+
+  /* Logo section */
+  .header-logo1 {
+    margin-left: 0; /* Remove extra margin */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the logo */
+    width: 100%; /* Take full width */
+  }
+
+  .header-logo1 .logo {
+    max-width: 100px; /* Adjust size for smaller screens */
+    margin: 0 auto; /* Center the logo */
+  }
+
+  /* Contact and email */
+  .header-logo2,
+  .call-number,
+  .email {
+    font-size: 12px; /* Smaller font size */
+    display: flex;
+    flex-direction: column; /* Stack contact info */
+    align-items: flex-start; /* Align left */
+  }
+
+  .call-number,
+  .email {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  /* Flags section */
+  .header-logo3 {
+    justify-content: center; /* Center flags */
+    width: 100%; /* Take full width */
+    margin-right: 0; /* Remove right margin */
+    gap: 10px; /* Add spacing between flags */
+  }
+
+  .header-logo3 .logo {
+    width: 25px; /* Smaller size for flags */
+    padding: 3px; /* Reduce padding */
+  }
+
+  /* Navigation menu */
+  .header-nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align to the left */
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    font-size: 14px; /* Adjust font size */
+    margin: 5px 0; /* Add spacing between items */
+  }
+}
+
+/* Low Resolution Tablets and iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Top section of the header */
+  .header-top {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 15px; /* Add space between items */
+  }
+
+  /* Logo section */
+  .header-logo1 {
+    margin-left: 0; /* Remove extra margin */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the logo */
+    width: 100%; /* Take full width */
+  }
+
+  .header-logo1 .logo {
+    max-width: 150px; /* Adjust logo size for tablets */
+    margin: 0 auto; /* Center the logo */
+  }
+
+  /* Contact and email */
+  .header-logo2,
+  .call-number,
+  .email {
+    font-size: 14px; /* Slightly larger font for tablets */
+    display: flex;
+    flex-direction: column; /* Stack contact info */
+    align-items: center; /* Center align */
+  }
+
+  .call-number,
+  .email {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center the text */
+  }
+
+  /* Flags section */
+  .header-logo3 {
+    justify-content: center; /* Center flags */
+    width: 100%; /* Take full width */
+    margin-right: 0; /* Remove right margin */
+    gap: 10px; /* Add spacing between flags */
+  }
+
+  .header-logo3 .logo {
+    width: 30px; /* Moderate size for flags */
+    padding: 5px; /* Adjust padding */
+  }
+
+  /* Navigation menu */
+  .header-nav {
+    flex-direction: row; /* Display navigation items horizontally */
+    justify-content: center; /* Center align navigation items */
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    font-size: 16px; /* Slightly larger font size */
+    margin: 0 10px; /* Adjust spacing between items */
+  }
+}
+/* Tablets iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Top section of the header */
+  .header-top {
+    flex-direction: row; /* Keep items in a row */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Add spacing between items */
+    padding: 10px 0; /* Add vertical padding */
+  }
+
+  /* Logo section */
+  .header-logo1 {
+    margin-left: 0; /* Adjust left margin */
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+    width: auto; /* Reset width */
+  }
+
+  .header-logo1 .logo {
+    max-width: 180px; /* Adjust logo size */
+    margin: 0; /* Remove any extra margin */
+  }
+
+  /* Contact and email */
+  .header-logo2,
+  .call-number,
+  .email {
+    font-size: 16px; /* Slightly larger font size for tablets */
+    display: flex;
+    flex-direction: column; /* Stack contact info */
+    align-items: flex-start; /* Align items to the start */
+    gap: 5px; /* Add space between items */
+  }
+
+  .call-number,
+  .email {
+    margin: 0; /* Remove extra margins */
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Flags section */
+  .header-logo3 {
+    display: flex; /* Ensure flexbox layout */
+    justify-content: flex-end; /* Align flags to the right */
+    flex-wrap: wrap; /* Allow flags to wrap if needed */
+    width: auto; /* Reset width */
+    margin-right: 10px; /* Adjust right margin */
+    gap: 10px; /* Add spacing between flags */
+    overflow: hidden; /* Ensure no content overflows */
+  }
+
+  .header-logo3 .logo {
+    width: 30px; /* Moderate size for flags */
+    height: auto; /* Maintain aspect ratio */
+    padding: 3px; /* Adjust padding */
+  }
+
+  /* Navigation menu */
+  .header-nav {
+    flex-direction: row; /* Keep navigation items horizontal */
+    justify-content: center; /* Center align navigation items */
+    padding: 15px 0;
+  }
+
+  .nav-item {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    margin: 0 15px; /* Adjust spacing between items */
+  }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Top section of the header */
+  .header-top {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 15px; /* Add space between items */
+    padding: 15px 0; /* Increase padding */
+  }
+
+  /* Logo section */
+  .header-logo1 {
+    margin-left: 0; /* Center align */
+    width: auto; /* Allow natural size */
+    text-align: center; /* Center text if any */
+  }
+
+  .header-logo1 .logo {
+    max-width: 200px; /* Adjust logo size for larger screens */
+    margin: 0 auto; /* Center align */
+  }
+
+  /* Contact and email */
+  .header-logo2,
+  .call-number,
+  .email {
+    font-size: 16px; /* Consistent size for better readability */
+    text-align: center; /* Center align */
+    gap: 5px; /* Space between items */
+  }
+
+  /* Flags section */
+  .header-logo3 {
+    justify-content: center; /* Center align flags */
+    gap: 10px; /* Add spacing between flags */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .header-logo3 .logo {
+    width: 40px; /* Slightly larger size for flags */
+    padding: 5px; /* Adjust padding */
+  }
+
+  /* Navigation menu */
+  .header-nav {
+    flex-direction: row; /* Keep items horizontal */
+    justify-content: space-evenly; /* Distribute navigation items evenly */
+    padding: 20px 0; /* Add padding for spacing */
+  }
+
+  .nav-item {
+    font-size: 18px; /* Adjust font size for readability */
+    margin: 0 20px; /* Increase spacing between items */
+  }
+}
+
+

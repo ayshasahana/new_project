@@ -1,0 +1,265 @@
+.body-section {
+    display: flex;
+    flex-direction: row; /* Align content and image side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space evenly between the content and image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   
+  }
+  
+  
+  .body-section .content {
+    flex: 1; /* Content takes up available space */
+    /* padding: 10px 35px; */
+    text-align: left;
+    width: 615px;
+    height: 380;
+    color: #333; /* Dark text */
+    gap: 5px;
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+  }
+  
+  .body-section .content h1 {
+    font-size: 4rem; /* Adjust font size */
+    /* font-weight: bold; */
+    margin: 10px 0;
+    margin-left: 20px;
+    color: #0f1010; /* Highlight color */
+    margin-top: 20px;
+    line-height: 1.5;
+    gap: 1px;
+  }
+  
+  .body-section .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+    color: #555; /* Softer text */
+  }
+  
+  .body-section .body-image {
+    flex: 1.5; /* Image takes smaller space compared to content */
+    display: flex;
+    justify-content: top;
+    flex-direction: row;
+    align-items: center;
+    border: 1px;
+    margin-left: 100px;
+  
+    
+   
+  }
+  
+  .body-section .body-image .image {
+    max-width: 300%; /* Limit image size */
+    /* height: 1093px; */
+    width: 1000px;
+    /* margin-left: 627.38px; */
+    /* border-radius: 100px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: rotate(-9.deg); /* Slight rotation for the image */
+  }
+  .row{
+    display: flex;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* -------------------- Responsive Design ------------------------------------------*/
+
+/* for tablets  */
+@media (min-width: 768px) and (max-width: 1023px)
+
+{
+
+  .body-section {
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: center; /* Center items */
+  }
+
+  /* Content styling */
+  .body-section .content {
+    width: 80%; /* Adjust content width */
+    top: 4rem; /* Adjust vertical spacing */
+    left: 0; /* Center horizontally */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Add some horizontal padding */
+  }
+
+  .body-section .content h1 {
+    font-size: 2.5rem; /* Adjust heading size for medium-sized screens */
+    margin: 15px 0;
+  }
+
+  .body-section .content p {
+    font-size: 1rem; /* Adjust paragraph size */
+    line-height: 1.6;
+  }
+
+  /* Image styling */
+  .body-section .body-image {
+    width: 100%; /* Make the image take up full width */
+    max-width: 90%; /* Limit image width */
+    margin-top: 20px; /* Add space between content and image */
+  }
+
+  .body-section .body-image .image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(0); /* Remove rotation for consistency */
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .body-section {
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center content */
+    padding: 10px; /* Add padding around the section */
+  }
+
+  .body-section .content {
+    width: 90%; /* Adjust content width for smaller screens */
+    top: 2rem; /* Adjust vertical positioning */
+    left: 0; /* Center align */
+    text-align: center; /* Align text to the center */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .body-section .content h1 {
+    font-size: 2rem; /* Smaller heading size */
+    margin: 10px 0; /* Adjust spacing */
+  }
+
+  .body-section .content p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Adjust line height */
+    margin: 5px 0; /* Adjust margin for smaller spacing */
+  }
+
+  .body-section .body-image {
+    margin: 20px 0; /* Add spacing around the image */
+    width: 100%; /* Adjust width to fit container */
+    display: flex;
+    justify-content: center; /* Center image */
+  }
+
+  .body-section .body-image .image {
+    max-width: 100%; /* Make the image fit within the container */
+    width: auto; /* Maintain aspect ratio */
+    transform: none; /* Remove rotation for simplicity */
+  }
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .body-section {
+    display: flex;
+    flex-direction: row; /* Align content and image side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space evenly between the content and image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   
+  }
+  
+  
+  .body-section .content {
+    flex: 1; /* Content takes up available space */
+    /* padding: 10px 35px; */
+    text-align: left;
+    width: 615px;
+    height: 380;
+    color: #333; /* Dark text */
+    gap: 5px;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+  }
+  
+  .body-section .content h1 {
+    font-size: 3rem; /* Adjust font size */
+    /* font-weight: bold; */
+    margin: 10px 0;
+    margin-left: 20px;
+    color: #0f1010; /* Highlight color */
+    margin-top: 20px;
+    line-height: 1.5;
+    gap: 1px;
+  }
+  
+  .body-section .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+    color: #555; /* Softer text */
+  }
+  
+  .body-section .body-image {
+    flex: 1.5; /* Image takes smaller space compared to content */
+    display: flex;
+    justify-content: top;
+    flex-direction: row;
+    align-items: center;
+    border: 1px;
+    margin-left: 100px;
+  
+    
+   
+  }
+  
+  .body-section .body-image .image {
+    max-width: 300%; /* Limit image size */
+    /* height: 1093px; */
+    width: 1000px;
+    /* margin-left: 627.38px; */
+    /* border-radius: 100px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: rotate(-9.deg); /* Slight rotation for the image */
+  }
+  .row{
+    display: flex;
+    width: 100%;
+  }
+
+
+}
+

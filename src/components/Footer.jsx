@@ -1,13 +1,13 @@
 import React from "react";
-import "../assets/css/Footer.css";
+import "../components/Footer.css";
 import logo from "../assets/img/logo.svg";
-import facebook from "../assets/img/facebookicon.svg";
-import linkedin from "../assets/img/linkedinicon.svg";
-import instagram from "../assets/img/instagramicon.svg";
-import whatsapp from "../assets/img/whatsappicon.svg";
-import youtube from "../assets/img/youtubeicon.svg";
-import phone from "../assets/img/phone.svg";
-import email from "../assets/img/email.svg";
+import facebook from "../assets/img/Footer_img/facebookicon.svg";
+import linkedin from "../assets/img/Footer_img/linkedinicon.svg";
+import instagram from "../assets/img/Footer_img/instagramicon.svg";
+import whatsapp from "../assets/img/Footer_img/whatsappicon.svg";
+import youtube from "../assets/img/Footer_img/youtubeicon.svg";
+import phone from "../assets/img/Footer_img/phone.svg";
+import email from "../assets/img/Footer_img/email.svg";
 
 const Footer = () => {
   const usefulLinks = [
@@ -110,68 +110,3 @@ const Footer = () => {
 
 export default Footer;
 
-// import React from "react";
-// import "../assets/css/Footer.css";
-// import Logo from "../assets/img/logo2.png";
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <div className="footer-container">
-//         {/* Left Section */}
-//         <div className="footer-brand">
-//           <img src={Logo}
-
-//             alt="Logo"
-//             className="footer-logo"
-//           />
-//           <h2>GLOBAL ENTERTAINMENT MANUFACTURER</h2>
-//           <p>
-//             Indoor Playground Manufacturer, Soft Play Manufacturer, Trampoline
-//             Park Manufacturer, Indoor Playground Supplier...
-//           </p>
-//         </div>
-
-//         {/* Useful Links */}
-//         <div className="footer-links">
-//           <h3>Useful Links</h3>
-//           <ul>
-//             <li>Home Page</li>
-//             <li>About Us</li>
-//             <li>Products</li>
-//             <li>Projects</li>
-//             <li>E-Catalogue</li>
-//             <li>Service</li>
-//             <li>Contact Us</li>
-//           </ul>
-//         </div>
-
-//         {/* Products */}
-//         <div className="footer-products">
-//           <h3>Products</h3>
-//           <ul>
-//             <li>Trampoline</li>
-//             <li>Playground</li>
-//             <li>Interactive Game</li>
-//           </ul>
-//         </div>
-
-//         {/* Contact Information */}
-//         <div className="footer-contact">
-//           <h3>Contact Information</h3>
-//           <p>Address: Sahab, Street No. 60, Amman, Jordan.</p>
-//           <p>Phone: +962791008716</p>
-//           <p>Email: info@gem-jo.com</p>
-//           <div className="footer-socials">
-//             <a href="#facebook">FB</a>
-//             <a href="#linkedin">LinkedIn</a>
-//             <a href="#instagram">Instagram</a>
-//             <a href="#youtube">YouTube</a>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
