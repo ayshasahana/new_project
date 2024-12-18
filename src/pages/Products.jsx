@@ -1,29 +1,28 @@
 // Product.jsx
 import React from "react";
 import "./Products.css";
-import a from "../assets/img/ProductsImages/product1.1.svg"
-import b from "../assets/img/ProductsImages/product1.2.svg"
+import a from "../assets/img/ProductsImages/product1.1.svg";
+import b from "../assets/img/ProductsImages/product1.2.svg";
 import c from "../assets/img/ProductsImages/product2.1.svg";
-import d from "../assets/img/ProductsImages/product2.2.svg"
-import e from "../assets/img/ProductsImages/product2.3.svg"
+import d from "../assets/img/ProductsImages/product2.2.svg";
+import e from "../assets/img/ProductsImages/product2.3.svg";
 
-import Header from "../components/Header"//header
-import Footer from "../components/Footer"//footer
-import Dashboard from "../components/Dashboard"
+import Header from "../components/Header"; //header
+import Footer from "../components/Footer"; //footer
+import Dashboard from "../components/Dashboard";
+import CardSlider from "../components/CardSlider";
+
 // import Carousel from 'react-bootstrap/Carousel';
-
-
-
-
-
 
 const Product = () => {
   return (
-   <div>
-    <Header/>
-    <Dashboard/>
-    
-<div className="playground-container">
+    <div>
+      <Header />
+      <Dashboard />
+
+      <CardSlider />
+
+      {/* <div className="playground-container">
 <a href="#" className="view-all-link">View all</a>
       <h1 className="playground-title">Trampoline</h1>
       <div className="playground-cards">
@@ -63,11 +62,10 @@ const Product = () => {
           <a href="#" className="card-link">Read More</a>
         </div>
       </div>
-      </div>
+      </div> */}
 
-      
-{/* .................................................................................................... */}
-    <div className="playground-container">
+      {/* .................................................................................................... */}
+      {/* <div className="playground-container">
     <a href="#" className="view-all-link">View all</a>
       <h1 className="playground-title">Playground</h1>
       <div className="playground-cards">
@@ -109,12 +107,11 @@ const Product = () => {
           <a href="#" className="card-link">Read More</a>
         </div>
       </div>
-    </div>
+    </div> */}
 
+      {/* ............................................................. */}
 
-    {/* ............................................................. */}
-
-    <div className="playground-container">
+      {/* <div className="playground-container">
     <a href="#" className="view-all-link">View all</a>
       <h1 className="playground-title">Interactive game</h1>
       <div className="playground-cards">
@@ -155,10 +152,10 @@ const Product = () => {
         </div>
       </div>
       <button className="button">Get Quotation</button>
-    </div>
+    </div> */}
 
-    <Footer/>
-    </div>   
+      <Footer />
+    </div>
   );
 };
 

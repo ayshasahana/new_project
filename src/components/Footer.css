@@ -1,5 +1,5 @@
 .footer {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding: 5%;
   font-family: Arial, sans-serif;
 }
@@ -17,14 +17,14 @@
 
 /* First Column */
 .description-column {
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
   padding-right: 82px;
 }
 
 /* Other Three Columns */
 .column {
-  flex: 1; 
-  min-width: 150px; 
+  flex: 1;
+  min-width: 150px;
 }
 
 .logo {

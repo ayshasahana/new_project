@@ -5,17 +5,17 @@ import Products from './pages/Products';
 
 
 
-
 function App() {
   return (
     <div>
 
-      
+
       {/* <About /> */}
       {/* <Homepage/> */}
-      <Products/>
-    
-      
+      <Products />
+
+
+
 
     </div>
   );
