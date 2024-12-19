@@ -11,6 +11,7 @@ import flagLogo5 from "../assets/img/HeaderImages/flagLogo5.png"
 import flagLogo6 from "../assets/img/HeaderImages/flagLogo6.png"
 import flagLogo7 from "../assets/img/HeaderImages/flagLogo7.png"
 import flagLogo8 from "../assets/img/HeaderImages/flagLogo8.png"
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -39,9 +40,10 @@ const Header = () => {
 
       </div>
       <nav className="header-nav">
-        <a href="/" className="nav-item">Home Page</a>
-        <a href="/about" className="nav-item">About</a>
-        <a href="/products" className="nav-item">Products</a>
+        <Link to="/" className="nav-item">Home Page</Link>
+        <Link to="/about" className="nav-item">About</Link>
+        <Link to="/products" className="nav-item">Products</Link>
+        <Link to="/iproducts" className="nav-item"> I prodrts</Link>
         <a href="/projects" className="nav-item">Projects</a>
         <a href="/e-catalogue" className="nav-item">E-Catalogue</a>
         <a href="/service" className="nav-item">Service</a>

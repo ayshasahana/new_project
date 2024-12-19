@@ -1,18 +1,12 @@
 // Product.jsx
 import React from "react";
 import "./Products.css";
-import a from "../assets/img/ProductsImages/product1.1.svg";
-import b from "../assets/img/ProductsImages/product1.2.svg";
-import c from "../assets/img/ProductsImages/product2.1.svg";
-import d from "../assets/img/ProductsImages/product2.2.svg";
-import e from "../assets/img/ProductsImages/product2.3.svg";
-
 import Header from "../components/Header"; //header
 import Footer from "../components/Footer"; //footer
 import Dashboard from "../components/Dashboard";
 import CardSlider from "../components/CardSlider";
 
-// import Carousel from 'react-bootstrap/Carousel';
+
 
 const Product = () => {
   return (
