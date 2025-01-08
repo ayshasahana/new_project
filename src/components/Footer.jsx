@@ -1,33 +1,35 @@
 import React from "react";
 import "../components/Footer.css";
-import logo from "../assets/img/logo.svg";
-import facebook from "../assets/img/Footer_img/facebookicon.svg";
-import linkedin from "../assets/img/Footer_img/linkedinicon.svg";
-import instagram from "../assets/img/Footer_img/instagramicon.svg";
-import whatsapp from "../assets/img/Footer_img/whatsappicon.svg";
-import youtube from "../assets/img/Footer_img/youtubeicon.svg";
-import phone from "../assets/img/Footer_img/phone.svg";
-import email from "../assets/img/Footer_img/email.svg";
+import logo from "../assets/img/logo.png";
+import facebook from "../assets/img/Footer_img/facebookicon.png";
+import linkedin from "../assets/img/Footer_img/linkedinicon.png";
+import instagram from "../assets/img/Footer_img/instagramicon.png";
+import whatsapp from "../assets/img/Footer_img/whatsappicon.png";
+import youtube from "../assets/img/Footer_img/youtubeicon.png";
+import phone from "../assets/img/Footer_img/phone.png";
+import email from "../assets/img/Footer_img/email.png";
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
-  const usefulLinks = [
-    "Home Page",
-    "About Us",
-    "Products",
-    "Projects",
-    "E-Catalogue",
-    "Service",
-    "Contact Us",
+  const usefulLinks = [    
+    { name: "Home Page", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Products", path: "/products" },
+    { name: "Projects", path: "/projects" },
+    { name: "E-Catalogue", path: "/e-catalogue" },
+    { name: "Service", path: "/service" },
+    { name: "Contact Us", path: "/getquotations" },
   ];
 
   const products = ["Trampoline", "Playground", "Interactive Game"];
 
   const socialIcons = [
-    { imgSrc: facebook, alt: "Facebook", link: "#" },
-    { imgSrc: linkedin, alt: "LinkedIn", link: "#" },
-    { imgSrc: instagram, alt: "Instagram", link: "#" },
-    { imgSrc: whatsapp, alt: "WhatsApp", link: "#" },
-    { imgSrc: youtube, alt: "YouTube", link: "#" },
+    { imgSrc: facebook, alt: "Facebook", link: "https://www.facebook.com/gemjo01" },
+    { imgSrc: linkedin, alt: "LinkedIn", link: "https://www.linkedin.com/company/global-entertainment-manufacturer/" },
+    { imgSrc: instagram, alt: "Instagram", link: "https://www.instagram.com/gemanufacturer/" },
+    { imgSrc: whatsapp, alt: "WhatsApp", link: "/+962791008716" },
+    { imgSrc: youtube, alt: "YouTube", link: "https://www.youtube.com/channel/UCaJVNG5UtvdQPcRuBd99L5g" },
   ];
 
   return (
@@ -60,7 +62,11 @@ const Footer = () => {
             <h3>Useful Links</h3>
             <ul>
               {usefulLinks.map((link, index) => (
-                <li key={index}>{link}</li>
+               <li key={index}>
+               <Link to={link.path} className="no-decoration">
+                 {link.name}
+               </Link>
+             </li>
               ))}
             </ul>
           </div>
@@ -86,8 +92,8 @@ const Footer = () => {
               <img src={phone} alt="Phone" className="icon" />
             </div>
             <div className="contact-item">
-              <a href="mailto:info@gem-jo.com">info@gem-jo.com</a>
-              <img src={email} alt="Email" className="icon" />
+            <a href="mailto:info@gem-jo.com" className='email-link'>info@gem-jo.com</a>
+            <img src={email} alt="Email" className="icon" />
             </div>
             <div className="social-icons">
               {socialIcons.map((icon, index) => (

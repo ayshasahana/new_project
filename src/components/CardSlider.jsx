@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CardSlider.css"; // Custom styles
-import  basketball from "../assets/img/ProductsImages/basketball.svg";
-import  climping from "../assets/img/ProductsImages/climping.svg"
-import  softplay from "../assets/img/ProductsImages/softplay.svg";
-import  toddler from "../assets/img/ProductsImages/toddler.svg";
-import  trapoline from "../assets/img/ProductsImages/trapoline.svg";
+import  basketball from "../assets/img/ProductsImages/basketball.png";
+import  climping from "../assets/img/ProductsImages/climping.png"
+import  softplay from "../assets/img/ProductsImages/softplay.png";
+import  toddler from "../assets/img/ProductsImages/toddler.png";
+import  trapoline from "../assets/img/ProductsImages/trapoline.png";
 
 
 
@@ -134,7 +134,7 @@ const PlaygroundSlider = () => {
  <div className="slider">
   <div>
   <a href="#" className="view-all-link">View all</a>
-    <h2>Trampoline</h2>
+    <h2 className="trampoline">Trampoline</h2>
     <Slider {...settings}>
       {Trampoline.map((card, index) => (
       <div key={index} style={{ padding: "10px" }}>
@@ -143,7 +143,7 @@ const PlaygroundSlider = () => {
           src={card.img}
           alt={card.title}
            />
-        <div className="card-text">
+        <div className="card-text-text">
           <h3>{card.title}</h3>
           <p >
             {expandedCard === index
@@ -165,7 +165,7 @@ const PlaygroundSlider = () => {
 
     <div className="slide-new">
     <a href="#" className="view-all-link">View all</a>
-    <h2>Playground</h2>
+    <h2 className="playground">Playground</h2>
     <Slider {...settings}>
       {Playground.map((card, index) => (
       <div key={index} style={{ padding: "10px" }}>
@@ -196,7 +196,7 @@ const PlaygroundSlider = () => {
 
     <div className="slider-new1">
     <a href="#" className="view-all-link">View all</a>
-    <h2>Interactive game</h2>
+    <h2 className="interactive">Interactive game</h2>
     <Slider {...settings}>
       {Interactive.map((card, index) => (
       <div key={index} style={{ padding: "10px" }}>

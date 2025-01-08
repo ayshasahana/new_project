@@ -1,15 +1,12 @@
 import React from 'react';
 import '../pages/About.css';
-// about 
-import about from "../assets/img/AboutImages/about1.svg";
-// aboutus
-import abountus from "../assets/img/AboutImages/abountus.svg";
-// vision
-// import "../assets/css/Vision.css";
-import visionicon from '../assets/img/AboutImages/visionIcon.svg';
-
+import abountus from "../assets/img/AboutImages/about1.png";
+import about from "../assets/img/AboutImages/abountus.png";
+import visionicon from '../assets/img/AboutImages/visionIcon.png';
 import Header from "../components/Header"//header
 import Footer from "../components/Footer"//footer
+import { Link } from 'react-router-dom';
+
 
 
 const About = () => {
@@ -21,7 +18,7 @@ const About = () => {
         <h1 style={{paddingLeft:"10%"}}>Unveiling The   <br>
         </br><span className="highlight">GEM Experience</span></h1>
         <p style={{paddingLeft:"10%"}}>
-          Your gateway to the ultimate entertainment experience! Explore<br/>
+          Your gateway to the ultimate entertainment experience!Explore
           our cutting-edge products and immerse yourself in a world of<br/>
           innovation and excitement.
         </p>
@@ -51,8 +48,9 @@ const About = () => {
 
       {/* Right Section - Text Content */}
       <div className="aboutus-text">
-      {/* < button className="aboutus-button">Get Quotation</button> */}
-
+      <Link to="/getquotations">
+        <button className="hover-button">Get Quotation</button>
+      </Link>
       <h1 className='aboutus-h1'>About Us</h1>
         <p className="aboutus-paragraph">
           Global Entertainment Manufacturer is a premier manufacturer and
@@ -82,6 +80,7 @@ const About = () => {
   </div>
 
 {/* code for vision */}
+
 <div className="vision-container">
       <div className="card">
         <div className="card-header">
@@ -146,18 +145,14 @@ const About = () => {
 
 
 <div>
-  <button className="service-button">Get Quotation</button>
+  {/* <button className="service-button">Get Quotation</button> */}
 </div>
 
 </div>
-
-
-
 <Footer/>
 
   </div>
   );
-
 };
 
 

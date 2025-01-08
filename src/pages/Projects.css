@@ -1,0 +1,444 @@
+/*Project Icon */
+
+.Projecticon{
+  width: 5%; 
+  height: auto; 
+  cursor: pointer; 
+  border-radius: 100%; 
+  background-color: #ffffff; 
+  transition: transform 0.3s ease; /* Add hover animation */
+  position: relative;
+  left: 88%;
+}
+
+.Projecticon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+  /*gem Bee theme 2023*/
+
+  .project-page1 {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; 
+    width: 90%; 
+    background-color: #ffffff;
+    border-radius: 10px;
+   
+  }
+  
+  /* Title styling */
+  .project-title1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 1%;
+  }
+  
+  /* Image container styling */
+  .project-images1 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+    margin-left: 1%;
+  }
+  
+  /* Image styling */
+  .project-image1 {
+    width: 15%; 
+    height: auto; 
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover effect for images */
+  .project-image1:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* Ocean Theme Section Styling */
+
+.Ocean-theme {
+    padding: 20px;
+    background-color: #ffffff; 
+    margin-top: 10px;
+}
+
+.Ocean-theme h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+/* Flex container for products */
+.Ocean-theme-container {
+    display: flex;
+    justify-content: row; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* Individual product styling */
+.Ocean-theme-images {
+    border-radius: 15px; 
+    background-color: #ffffff; 
+    padding: 15px;
+}
+
+/* Product image styling */
+.Ocean-theme-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    margin-left: 2%;
+    transition: transform 0.3s ease; 
+
+}
+ /* Hover effect for images */
+ .Ocean-theme-image:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+ /*////////////////////////////////////////////////////////////////////////////*/
+/* playground Theme Section Styling */
+  
+.Playground {
+    padding: 20px;
+    background-color: #ffffff; 
+    margin-top: 10px;
+}
+
+.Playground h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+/* Flex container for products */
+.Playground-container {
+    display: flex;
+    justify-content: row; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* Individual product styling */
+.Playground-images {
+    border-radius: 15px; 
+    background-color: #ffffff; 
+    padding: 15px;
+    transition: transform 0.3s ease; 
+  }
+  .Playground-images:hover {
+    transform: scale(1.1);
+  }
+
+
+/* Product image styling */
+.Playground-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+
+ /* Hover effect for images */
+ .Playground-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+  
+  /*////////////////////////////////////////////////////////////////////////////*/
+
+  /*playground1*/
+
+  .playground1 {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; /* Dynamic height */
+    width: 90%; /* Centered layout with extra space on sides */
+    background-color: #ffffff;
+    border-radius: 10px;
+   
+  }
+  
+  /* Title styling */
+  .playground1-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    /* text-align: center; */
+  }
+  
+  /* Image container styling */
+  .playground1-images {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+  }
+  
+  /* Image styling */
+  .playground1-image {
+    width: 15%; 
+    height: auto; 
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .playground1-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+   /*////////////////////////////////////////////////////////////////////////////*/
+  /*playground2 Section styling */
+.Playground2 {
+    padding: 20px;
+    background-color: #ffffff; 
+    margin-top: 10px;
+}
+
+.Playground2 h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+/* Flex container for products */
+.Playground2-container {
+    display: flex;
+    justify-content: row; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* Individual product styling */
+.Playground2-images {
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+    transition: transform 0.3s ease; 
+}
+
+ /* Hover effect for images */
+ .Playground2-images:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+/* Product image styling */
+.Playground2-image {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease; 
+
+}
+
+ /* Hover effect for images */
+ .Playground2-image:hover {
+  transform: scale(1.15); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+ /*////////////////////////////////////////////////////////////////////////////*/
+/* Responsive styles for mobile view (min-width: 350px, max-width: 768px) */
+@media (min-width: 350px) and (max-width: 768px) {
+
+  /*Project Icon */
+
+.Projecticon{
+  width: 15%; 
+  height: auto; 
+  left: 80%;
+}
+
+  /* General container adjustments */
+  .project-page1, .playground1, .Ocean-theme, .Playground, .Playground2 {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Title adjustments */
+  .project-title1, .playground1-title, .Ocean-theme h1, .Playground h1, .Playground2 h1 {
+    font-size: 20px; 
+    text-align: center;
+    margin-left: 0; 
+  }
+
+  /* Adjust image container layouts */
+  .project-images1, .playground1-images, .Ocean-theme-container, .Playground-container, .Playground2-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  /* Adjust individual image styles */
+  .project-image1, .playground1-image {
+    width: 45%;  
+    height: auto; 
+  }
+  .playground-image,.Ocean-theme-image,.playground2-image{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust margins and paddings */
+  .Ocean-theme-container, .Playground-container, .Playground2-container {
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* Reduce padding for individual product containers */
+  .Ocean-theme-images, .Playground-images, .Playground2-images {
+    padding: 10px;
+  }
+}
+/* Responsive styles for tablet view (min-width: 768px, max-width: 1025px) */
+@media (min-width: 768px) and (max-width: 1025px) {
+
+  .Projecticon{
+    width: 15%; 
+    height: auto; 
+    left: 80%;
+  }
+  
+
+  /* General container adjustments */
+  .project-page1, .playground1, .Ocean-theme, .Playground, .Playground2 {
+    padding: 25px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* Title adjustments */
+  .project-title1, .playground1-title, .Ocean-theme h1, .Playground h1, .Playground2 h1 {
+    font-size: 24px; 
+    text-align: center; 
+    margin-bottom: 15px;
+  }
+
+  /* Image container adjustments */
+  .project-images1, .playground1-images, .Ocean-theme-container, .Playground-container, .Playground2-container {
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+  }
+
+  /* Adjust individual image styles */
+  .project-image1, .playground1-image{
+    width: 25%; 
+    height: auto; 
+  }
+  .Ocean-theme-image, .playground-image, .playground2-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Individual product container adjustments */
+  .Ocean-theme-images, .Playground-images, .Playground2-images {
+    padding: 10px; 
+    border-radius: 10px; 
+  }
+
+  /* Adjust overall spacing and alignment */
+  .Ocean-theme-container, .Playground-container, .Playground2-container {
+    margin: 0;
+    padding: 15px;
+  }
+}
+/* Responsive styles for laptop view (min-width: 1025px, max-width: 1400px) */
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+  .Projecticon{
+    width: 7%; 
+    height: auto; 
+    left: 85%;
+  }
+  
+
+  /* General container adjustments */
+  .project-page1, .playground1 {
+    padding: 30px;
+    margin: 0 auto;
+  }
+  .Ocean-theme, .Playground, .Playground2{
+    height: auto;
+  }
+
+  /* Title adjustments */
+  .project-title1, .playground1-title, .Ocean-theme h1, .Playground h1, .Playground2 h1 {
+    font-size: 26px; 
+    text-align: left; 
+    margin-bottom: 20px;
+  }
+
+  /* Image container adjustments */
+  .project-images1, .playground1-images, .Ocean-theme-container, .Playground-container, .Playground2-container {
+    flex-direction: row; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+
+  /* Adjust individual image styles */
+  .project-image1, .playground1-image, .Ocean-theme-image, .playground-image, .playground2-image {
+    height: auto; 
+  }
+
+  /* Product container adjustments */
+  .Ocean-theme-images, .Playground-images, .Playground2-images {
+    padding: 15px; 
+    border-radius: 10px; 
+  }
+
+  /* Adjust overall spacing and alignment */
+  .Ocean-theme-container, .Playground-container, .Playground2-container {
+    margin: 0;
+    padding: 20px;
+  }
+}
+

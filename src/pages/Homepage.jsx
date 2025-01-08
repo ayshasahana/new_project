@@ -1,41 +1,58 @@
 import React from 'react'
 import './Homepage.css';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Dashboard from '../components/Dashboard'
 import Footer from '../components/Footer';
-import playground from '../assets/img/product_img/playground.svg';
-import trampoline from '../assets/img/product_img/trampoline.svg';
-import interactiveGame from '../assets/img/product_img/interactiveGame.svg';
-import plusicon from '../assets/img/product_img/plusicon.svg';
+import playground from '../assets/img/product_img/playground.png';
+import trampoline from '../assets/img/product_img/trampoline.png';
+import interactiveGame from '../assets/img/product_img/interactiveGame.png';
+import plusicon from '../assets/img/product_img/plusicon.png';
 
-import image1 from "../assets/img/project_img/image1.svg";
-import image2 from "../assets/img/project_img/image2.svg";
-import image3 from "../assets/img/project_img/image3.svg";
-import image4 from "../assets/img/project_img/image4.svg";
-import bgframe from "../assets/img/project_img/bgframe.png";
+import image1 from "../assets/img/project_img/project_img/image1.png";
+import image2 from "../assets/img/project_img/project_img/image2.png";
+import image3 from "../assets/img/project_img/project_img/image3.png";
+import image4 from "../assets/img/project_img/project_img/image4.png";
+import bgframe from "../assets/img/project_img/project_img/bgframe.png";
 
-import OnSiteIcon from "../assets/img/services_img/onsite.png";
-import QualityControlIcon from "../assets/img/services_img/quality.svg";
-import SupportIcon from "../assets/img/services_img/maintanance.svg";
-import InHouseIcon from "../assets/img/services_img/inHouse.svg";
-import BespokeIcon from "../assets/img/services_img/bespoke.svg";
-import AllDetailsIcon from "../assets/img/services_img/allDetails.svg";
-import GroupLayer from "../assets/img/services_img/group.svg";
-
+import OnSiteIcon from "../assets/img/services_img/services_img/onsite.png";
+import QualityControlIcon from "../assets/img/services_img/services_img/quality.png";
+import SupportIcon from "../assets/img/services_img/services_img/maintanance.png";
+import InHouseIcon from "../assets/img/services_img/services_img/inHouse.png";
+import BespokeIcon from "../assets/img/services_img/services_img/bespoke.png";
+import AllDetailsIcon from "../assets/img/services_img/services_img/allDetails.png";
+import GroupLayer from "../assets/img/services_img/services_img/group.png";
+import homeImage from "../assets/img/imagefile/imagefile/homeImg.png";
 
 
 
 
 
 const Homepage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/getquotations'); // Navigate to the GetQuotation page
+  };
+  let title = (<>Unlock Limitless<br/> Entertainment <br/>With GEM</>)
+  let description = (<>Your gateway to the ultimate entertainment experience!Explore<br/>our cutting-edge productsand immerse yourself in a world of
+    <br/>
+     innovation and excitement.
+</>)
   return (
     <div className='HomePage'>
         <Header/>
-        <Dashboard/>
+        <Dashboard title={title} imageUrl={homeImage} description={description} />
          <section className="product-section">
       <div>
       <h1>Products</h1>
-        <img src={plusicon} alt="plusicon" className="Producticon" />
+      <img
+      src={plusicon}
+      alt="plusicon"
+      className="Producticon"
+      onClick={handleClick}
+      style={{ cursor: 'pointer' }} // Optional: Add pointer cursor for better UX
+    />
         </div>
       <div className="product-container">
         <div className="product">
@@ -54,17 +71,26 @@ const Homepage = () => {
     </section>
 
     
-    <section className="projects-section">
-      <img src={bgframe} alt="bgframe" className="project-bgframe" />
+    <section className="Projects-section">
+      <img src={bgframe} alt="bgframe" className="Projects-bgframe" />
         <div className="grid-container">
+
+
         <div className="image-container">
-        <img src={image1} alt="Project 1" className="project-image" />
-        <img src={image2} alt="Project 2" className="project-image" />
-        <img src={image3} alt="Project 3" className="project-image" />
-        <img src={image4} alt="Project 4" className="project-image" />
-        </div>
+          <img src={image1} alt="Project 1" className="Projects-image" />
+
+          
+          <img src={image2} alt="Project 2" className="Projects-image" />
+
+          <img src={image3} alt="Project 3" className="Projects-image" />
+
+        
+          <img src={image4} alt="Project 4" className="Projects-image" />
+          </div>
+
+
       </div>
-      <div className="projects-header">
+      <div className="Projects-header">
         <h1>Projects</h1>
         <p className="intro-text">
           Thinking About A New Entertainment Venue Project? You Are In The Right

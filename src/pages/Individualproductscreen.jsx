@@ -1,24 +1,30 @@
 import React from "react";
 import './Individualproductscreen.css';
-import individual from '../assets/img/individualproductscreen.svg';
+import individual from '../assets/img/individualproductscreen.png';
 import Header from "../components/Header"; //header
 import Footer from "../components/Footer"; //footer
 import Dashboard from "../components/Dashboard";
-import plusicon from '../assets/img/product_img/plusicon.svg';
+import plusicon from '../assets/img/product_img/plusicon.png';
+import iproducts from "../assets/img/imagefile/imagefile/i product.png"
 
 
 const PerformanceTrampoline = () => {
+  let title = (<>Performance<br/> Trampoline</>)
+  let description = (<>GEM Trampoline Parks are indoor facilities with trampolines, foam pits, and various activities.<br/> Popular for their fun and appeal to all ages, they offer engaging exercise, birthday parties,<br/> and group events for all skill levels.
+    <br/>
+     innovation and excitement.
+</>)
+
   return (
     <div>
     <Header />
-    <Dashboard />
+    <Dashboard  title={title} imageUrl={iproducts} description={description}/>
     
     <div className="performance-trampoline-container">
+    <img src={plusicon} alt="plusicon"  className="plusicon-img"/>
+        
       <div className="image-section">
-      <div>
-        <img src={plusicon} alt="plusicon" className="Producticon" />
-        </div>
-        <img
+      <img
           src={individual}
           alt="Performance Trampoline"
           className="trampoline-image"

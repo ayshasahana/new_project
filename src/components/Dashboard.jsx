@@ -1,30 +1,20 @@
-import React from 'react'
-import homeImg from "../assets/img/dashboard_img/homeImg.png"
-import "./Dashboard.css"
+import React from "react";
+import "./Dashboard.css";
 
-const Body = () => {
+const Body = ({ title, description, imageUrl }) => {
   return (
     <div className="body-section">
-      <div className='row'>
-      <div className="content">
-    <h1>Unlock Limitless</h1>
-    <h1>Entertainment</h1>
-    <h1>With GEM</h1>
-    <p>Your gateway to the ultimate entertainment experience!Explore
-      <br/>
-      our cutting-edge productsand immerse yourself in a world of
-      <br/>
-       innovation and excitement.
-    </p>
-</div>
-<div className="body">
-<img src={homeImg} alt="homeImg" className="image" />
-</div>
+      <div className="row">
+        <div className="content">
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+        <div className="body">
+          <img src={imageUrl} alt="homeImg" className="hero-image" />
+        </div>
       </div>
- 
-</div>
+    </div>
+  );
+};
 
-  )
-}
-
-export default Body
+export default Body;

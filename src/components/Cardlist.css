@@ -1,0 +1,298 @@
+/* Container for the entire grid layout */
+.caldlist-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);/* Divides into 4 equal columns */
+  gap: 20px; /* Space between columns */
+  padding: 20px;
+  background-color: #ffffff; /* white background */
+  margin-left: 5%;
+  margin-right: 6%;
+}
+
+/* Each column */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between cards in each column */
+}
+
+/* Individual project cards */
+.caldlist-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.caldlist-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image styling */
+.caldlist-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Project name styling */
+.caldlist-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Floating add button styling */
+.add-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: #003d82; /* Dark blue color */
+  color: white;
+  /* font-size: 36px; */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #002966;
+}
+
+/*gem Bee theme 2023*/
+
+.caldlist-page1 {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto; /* Dynamic height */
+  width: 90%; /* Centered layout with extra space on sides */
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #0066cc; */
+}
+
+/* Title styling */
+.caldlist-title1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+/* Image container styling */
+.caldlist-images1 {
+  display: flex;
+  flex-direction: row; /* Ensure images are in a single row */
+  justify-content: space-between; /* Add spacing between images */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 16px; /* Space between images */
+}
+
+/* Image styling */
+.caldlist-image1 {
+  width: 15%; /* Adjusted to fit 6 images in one row */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+/* Hover effect for images */
+.caldlist-image1:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+}
+
+
+
+
+/* Responsive Design for Mobile Devices (358px to 768px) */
+@media (min-width: 358px) and (max-width: 768px) {
+  /* Container for the entire grid layout */
+  .caldlist-section {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on medium-sized devices */
+    gap: 16px; /* Reduced gap for smaller screens */
+    padding: 15px;
+  }
+
+  /* Each column */
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduce space between cards */
+  }
+
+  /* Individual project cards */
+  .caldlist-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .caldlist-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Project image styling */
+  .caldlist-image {
+    width: 40px; /* Slightly smaller image size */
+    height: 40px; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  /* Project name styling */
+  .caldlist-name {
+    font-size: 12px; /* Smaller text size for mobile */
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* Floating add button styling */
+  .add-button {
+    top: 20px;
+    right: 20px;
+    width: 45px; /* Larger button for ease of tap */
+    height: 45px;
+    font-size: 24px; /* Adjust font size for visibility */
+  }
+
+  /* Title styling for project page */
+  .caldlist-title1 {
+    font-size: 24px; /* Slightly smaller title for mobile */
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  /* Image container styling */
+  .caldlist-images1 {
+    flex-direction: column; /* Stack images vertically on mobile */
+    justify-content: center;
+    gap: 12px; /* Reduce gap between images */
+  }
+
+  /* Image styling */
+  .caldlist-image1 {
+    width: 100%; /* Make images full width on smaller screens */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect for images */
+  .caldlist-image1:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+}
+
+
+/* Responsive Design for Tablets and Small Laptops (768px to 1025px) */
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* Container for the entire grid layout */
+  .caldlist-section {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for medium screens */
+    gap: 18px; /* Moderate gap between columns */
+    padding: 18px; /* Reduced padding */
+  }
+
+  /* Each column */
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* Moderate space between cards */
+  }
+
+  /* Individual project cards */
+  .caldlist-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 12px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .caldlist-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Project image styling */
+  .caldlist-image {
+    width: 45px; /* Slightly larger images for tablet screens */
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  /* Project name styling */
+  .caldlist-name {
+    font-size: 14px; /* Adjust font size for readability on tablets */
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* Floating add button styling */
+  .add-button {
+    top: 25px; /* Adjusted positioning for better alignment on tablets */
+    right: 25px;
+    width: 50px; /* Slightly larger button */
+    height: 50px;
+    font-size: 28px; /* Adjusted font size */
+  }
+
+  /* Title styling for project page */
+  .caldlist-title1 {
+    font-size: 26px; /* Slightly smaller title */
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  /* Image container styling */
+  .caldlist-images1 {
+    flex-direction: row; /* Keep images in a row */
+    justify-content: space-between; /* Space images out evenly */
+    gap: 14px; /* Moderate gap between images */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  /* Image styling */
+  .caldlist-image1 {
+    width: 20%; /* Adjusted to fit 5 images in one row */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect for images */
+  .caldlist-image1:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+}
+
+

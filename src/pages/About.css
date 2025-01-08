@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 6rem 2rem;
-  background-image: url("../assets/img/AboutImages/about1.1.svg");
+  background-image: url("../assets/img/AboutImages/about1.1.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -18,7 +18,7 @@
 }
 
 .about-content h1 {
-  font-size: 400%;
+  font-size: 421%;
   font-weight: 550;
   color: #333;
 }
@@ -28,9 +28,11 @@
 }
 
 .about-content p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #666;
   margin-top: 1rem;
+  position: relative;
+  top: -46px;
 }
 
 .about-image1 {
@@ -46,6 +48,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   float: right;
+  transition: transform 1.3s;
+}
+
+.about-image img:hover {
+ 
+  transform: translateY(-5px);
 }
 
  
@@ -53,7 +61,7 @@
 
 /* Default styles */
 .aboutus-container {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,11 +83,24 @@
   height: 50%;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 1.3s;
+}
+.aboutus-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 1.3s;
+}
+.aboutus-image:hover {
+ 
+  transform: translateY(-5px);
 }
 
 /* Text section styling */
 .aboutus-h1 {
   margin-bottom: 5%;
+  font-size: 2.7rem;
 }
 
 .aboutus-text {
@@ -97,6 +118,29 @@
   line-height: 1.6;
 }
 
+.hover-button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 15px 30px; 
+  font-size: 18px; 
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 3%;
+  text-decoration: none;
+  /* Align the button to the right */
+  position: relative; 
+  display: block; 
+  margin-left: auto; 
+}
+
+.hover-button:hover {
+  background-color: #1d4ed8; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  text-decoration: none;
+}
 
 
 
@@ -109,6 +153,7 @@
   align-items: center;
   padding: 8%;
   background: linear-gradient(to right, #ffffff, #dc0cc10d);
+ 
 }
 
 .card {
@@ -120,7 +165,8 @@
   background-color: #F2C3000D;
   transition: transform 1.3s;
   width: 385px;
-  height: 160px;
+  height: 170px;
+
 }
 
 .card:hover {
@@ -149,7 +195,7 @@
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
 }
 
 
@@ -164,7 +210,7 @@
   display: flex;
   /* text-align: left; */
   /* padding: 20px; */
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   width: 100%;
   margin-top: 3%;
   margin-bottom: 3%;
@@ -184,24 +230,27 @@
 .service-header {
   width: 100%;
   margin-right: 2%;
-  /* margin-left: 7%; */
+  margin-left: 7%;
+  flex-direction: column;
 }
 
 .service-header h2 {
-  width: 60%;
+  width: 100%;
   color: #00a4cc;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: -28px;
 }
 
 .service-header h1 {
   font-size: 2.5rem;
+  width: 100%;
 }
 
 .service-header p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
   color: #666;
+  margin-top: -20px;
 }
 
 /* Second section (boxes) */
@@ -243,6 +292,7 @@
   border: 1px solid #ff6b6bc2;
 }
 
+
 .service-box.blue {
   background-color: #00A1C61A;
   border: 1px solid #4fc2f7da;
@@ -271,300 +321,122 @@
 
 
 
-/* Responsive      code........................... */
-
-
-/* !!!!!!!!!!!!...................MOBILE VIEW.......................!!!!!!!!!!!!!!!!!!!!*/
-
-
-
-  @media (max-width: 480px) {
-    /* About Section ...........................................................................*/
-    .about-container {
-      flex-direction: column;
-      padding: 4rem 1rem;
-      background-size: 70%; /* Adjust background size */
-      text-align: center; /* Center-align for mobile */
-    }
-  
-    .about-content {
-      width: 100%;
-    }
-  
-    .about-content h1 {
-      font-size: 2rem;
-    }
-  
-    .about-content p {
-      font-size: 0.9rem;
-    }
-  
-    .about-image img {
-      max-width: 100%;
-      float: none;
-      margin: 0 auto;
-    }
-  
-    /* About Us Section.............................................................................. */
-    .aboutus-container {
-      flex-direction: column;
-      padding: 1rem;
-    }
-  
-    .aboutus-content {
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .aboutus-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-  
-    .aboutus-text {
-      margin: 0;
-    }
-  
-    .aboutus-paragraph {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-  
-    /* Vision Section ......................................................................*/
-    .vision-container {
-      flex-direction: column;
-      padding: 4%;
-    }
-  
-    .card {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  
-    /* Services Section.................................................................. */
-    .service-container {
-      padding: 2%;
-    }
-  
-    .firstSection {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2%;
-    }
-  
-    .service-header h2 {
-      width: 100%;
-      font-size: 12px;
-    }
-  
-    .service-header h1 {
-      font-size: 1.8rem;
-    }
-  
-    .service-header p {
-      font-size: 14px;
-    }
-  
-    .service-boxes {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service-box {
-      width: 90%;
-      margin-bottom: 1rem;
-    }
-  
-    .service-button {
-      float: none;
-      display: block;
-      margin: 0 auto;
-      padding: 8px 16px;
-      font-size: 12px;
-    }
+@media (max-width: 480px) {
+  /* About Section ...........................................................................*/
+  .about-container {
+    flex-direction: column;
+    padding: 4rem 1rem;
+    background-size: 70%; /* Adjust background size */
+    text-align: center; /* Center-align for mobile */
+   
   }
-  
 
+  .about-content {
+    width: 100%;
+  }
 
+  .about-content h1 {
+    font-size: 2rem;
+  }
 
+  .about-content p {
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
 
-/* !!!!!!!!!!!!!!!!!!!!!!............ TAB VIEW(low resolution).....................!!!!!!!!!!!!!!!!!!! */
+  .about-image img {
+    max-width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
 
+  /* About Us Section.............................................................................. */
+  .aboutus-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-/* Low Resolution Tablets and iPads */
-@media (min-width: 481px) and (max-width: 767px){
+  .aboutus-content {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 
+  .aboutus-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
 
-/* code for about................................................................................ */
+  .aboutus-text {
+    margin: 0;
+  }
 
-.about-container {
-  flex-direction: column;
-  padding: 5rem 1.5rem;
-  background-size: 50%;
-}
+  .aboutus-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 
-.about-content {
-  width: 100%;
-  text-align: center;
-}
-
-.about-content h1 {
-  font-size: 3rem;
-}
-
-.about-content p {
-  font-size: 1rem;
-}
-
-.about-image img {
-  max-width: 100%;
-}
-
- 
-/* code for aboutus....................................................................... */
-
-.aboutus-content {
-  flex-direction: column;
-  width: 95%;
-  padding: 1.5rem;
-}
-
-.aboutus-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.aboutus-text {
-  margin: 0;
-  text-align: center;
-}
-
-.aboutus-paragraph {
-  font-size: 92%;
-}
-
-
-
-
-
-/* code for vision.......................................................................................... */
-
+  /* Vision Section ......................................................................*/
   .vision-container {
     flex-direction: column;
-    align-items: center;
-    padding: 5%;
+    padding: 4%;
   }
 
   .card {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-
-  .card-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .card h2 {
-    font-size: 0.5rem;
-    margin-bottom: 10px;
-  }
-
-  .card-text {
-    font-size: 0.5rem;
-    line-height: 1.2;
-  }
-
-
-/* code for services ................................................................................*/
-
-
-
-
-  .service-container {
-    display: flex;
-    font-family: Arial, sans-serif;
     width: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+   .card-text{
+    font-size: 10px;
+   
+  }
+   
+  /* Services Section.................................................................. */
+  .service-container {
+    padding: 2%;
   }
 
   .firstSection {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 5%;
-  }
-
-  .service-header {
-    width: 100%;
     text-align: center;
-    margin-right: 0;
+    padding: 2%;
   }
 
   .service-header h2 {
     width: 100%;
-    color: #00a4cc;
     font-size: 12px;
-    margin-bottom: 8px;
   }
 
   .service-header h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .service-header p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #666;
+    font-size: 14px;
+    margin-right: 5%;
   }
 
   .service-boxes {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-    width: 100%;
   }
 
   .service-box {
-    background-color: #fff;
     width: 90%;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #171616;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
 
   .service-button {
+    float: none;
     display: block;
-    margin: 20px auto 0;
+    margin: 0 auto;
     padding: 8px 16px;
     font-size: 12px;
-    background-color: #00A1C6;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .service-button:hover {
-    background-color: #007ba7;
   }
 }
-
-
 
 
 
@@ -575,248 +447,140 @@
 
 
 /* Tablets iPads (Portrait) */
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width:768px) and (max-width:1024px){
 
 
-
-/* code for about................................................................................. */
-
-.about-container {
-  padding: 5rem 2rem;
-  background-size: 45%;
-}
-
-.about-content {
-  width: 60%;
-}
-
-.about-content h1 {
-  font-size: 2rem;
-}
-
-.about-content p {
-  font-size: 1rem;
-}
-
-.about-image img {
-  max-width: 85%;
-}
-
-
- 
-/* code for aboutus....................................................................... */
-.aboutus-content {
-  flex-direction: row;
-  width: 90%;
-  padding: 2rem;
-}
-
-.aboutus-image {
-  width: 45%;
-  height: auto;
-}
-
-.aboutus-text {
-  margin: 0;
-}
-
-.aboutus-paragraph {
-  font-size: 95%;
-}
-}
-
-
-
-
-
-
-/* code for vision.......................................................................................... */
-.vision-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 8%;
-  background: linear-gradient(to right, #ffffff, #dc0cc10d);
-}
-
-.card {
-  width: 396px;
-  padding: 2%;
-  border: 1px solid #f1c40f;
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #F2C3000D;
-  transition: transform 1.3s;
-  width: 385px;
-  height: 160px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.card-icon {
-  width: 10%;
-  height: 10%;
-  margin-right: 10px;
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 0;
-}
-
-.card-text {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-}
-.vision-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: center;
-  padding: 6%;
-}
-
-.card {
-  width: 45%;
-  margin: 1%;
-}
-
-.card-icon {
-  width: 10%;
-  height: 10%;
-}
-
-.card h2 {
-  font-size: 0.8rem;
-}
-
-.card-text {
-  font-size: 0.8rem;
-}
-
-
-
-
-
-
-/* code for services ................................................................................*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .service-container {
+  /* About Section */
+  .about-container {
     display: flex;
-    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    background-image: url("../assets/img/AboutImages/about1.1.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  
+  .about-content {
     width: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+   
+  }
+
+  .about-content h1 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    top: -20px;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+
+  /* About Us Section */
+  .aboutus-content {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aboutus-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: 17%;
+  }
+
+  .aboutus-h1 {
+    font-size: 2rem;
+  }
+
+  .aboutus-text {
+    margin: 0;
+    width: 100%;
+  }
+
+  .aboutus-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .hover-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Vision Section */
+  .vision-container {
+    flex-direction: column;
+    padding: 4%;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .card-text{
+    font-size: 14px;
+   
+  }
+
+  /* Services Section */
+  .service-container {
+    flex-direction: column;
+    padding: 2rem;
   }
 
   .firstSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5%;
+    flex-direction: column;
+    padding: 3%;
   }
 
-  /* First section (header) */
   .service-header {
-    width: 100%;
-    margin-right: 2%;
+    margin: 0 auto;
+    text-align: center;
   }
+  
+.service-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-top: -20px;
+  margin-right: auto;
+  width: 85%;
+}
 
   .service-header h2 {
-    width: 60%;
-    color: #00a4cc;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-right: 14%;
   }
 
   .service-header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-right: 10%;
   }
 
-  .service-header p {
-    font-size: 17px;
-    line-height: 1.6;
-    color: #666;
-  }
-
-  /* Second section (boxes) */
   .service-boxes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Wrap boxes for smaller screens */
-    margin-bottom: 183px;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .serviceBoxes1 {
-    display: flex;
-    gap: 30%;
-    justify-content: space-between;
-  }
-
-  .serviceBoxes2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  /* Individual box styles */
   .service-box {
-    background-color: #fff;
-    width: 188px;
-    padding: 25px;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #171616;
-    border: 1px solid #ddd;
-    margin-bottom: 20px; /* Add spacing for small screens */
+    width: 90%;
+    padding: 15px;
+    margin: 1rem 0;
   }
 
-  .service-box.red {
-    background-color: #D3085B1A;
-    border: 1px solid #ff6b6bc2;
-  }
-
-  .service-box.blue {
-    background-color: #00A1C61A;
-    border: 1px solid #4fc2f7da;
-  }
-
-  .service-box.yellow {
-    background-color: #F2C3001A;
-    border: 1px solid #f1c40f;
-  }
-
-  /* Button styles */
   .service-button {
-    float: right;
-    padding: 1% 2%;
-    font-size: 13px;
-    background-color: #00A1C6;
-    color: #fff;
-    border: none;
-    border-radius: 10%;
-    cursor: pointer;
-  }
-
-  .service-button:hover {
-    background-color: #007ba7;
+    font-size: 12px;
+    padding: 8px 16px;
   }
 }
+
+
+
 
 
 
@@ -826,45 +590,45 @@
 @media (min-width: 1025px) and (max-width: 1280px){
 
 
-  /* code for about............................................................. */
+/* code for about............................................................. */
 
-  .about-container {
-    padding: 6rem 3rem;
-    background-size: 40%;
+.about-container {
+  padding: 6rem 3rem;
+  background-size: 40%;
 }
 
 .about-content {
-    width: 55%;
+  width: 55%;
 }
 
 .about-content h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .about-content p {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .about-image img {
-    max-width: 90%;
+  max-width: 90%;
 }
 
 
- 
+
 /* code for aboutus....................................................................... */
 
 
 .aboutus-content {
-  width: 85%;
+width: 85%;
 }
 
 .aboutus-image {
-  width: 50%;
+width: 50%;
 }
 
 .aboutus-text {
-  margin-right: -2%;
-  margin-left: -4%;
+margin-right: -2%;
+margin-left: -4%;
 }
 
 
@@ -874,81 +638,55 @@
 
 
 /* code for vision.......................................................................................... */
-.vision-container {
-  justify-content: space-evenly;
-  padding: 7%;
+/* .vision-container {
+justify-content: space-evenly;
+padding: 7%;
 }
 
 .card {
-  width: 40%;
+width: 40%;
 }
 
 .card-icon {
-  width: 8%;
-  height: 8%;
+width: 8%;
+height: 8%;
 }
 
 .card h2 {
-  font-size: 0.9rem;
+font-size: 0.9rem;
 }
 
-.card-text {
-  font-size: 0.9rem;
+.card-text{
+font-size: 0.9rem;
 }
 
 
 
-
+ */
 
 
 
 /* code for services ................................................................................*/
 
- .service-container {
-  width: 90%;
-  margin-left: 5%;
+.service-container {
+width: 90%;
+margin-left: 5%;
 }
 
 .service-header h1 {
-  font-size: 2rem;
+font-size: 2rem;
 }
 
 .service-box {
-  width: 200px;
-  padding: 20px;
+width: 200px;
+padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
 
 
-
-
-
-
-
+ 
 
 
 

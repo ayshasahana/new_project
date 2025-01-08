@@ -1,0 +1,106 @@
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #009EC5;
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 80%;
+}
+
+/* Left section styles */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image row styles */
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* Image styles */
+.image {
+
+  max-width: 50%;
+  height: auto;
+  border-radius: 7px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for images */
+.image:hover {
+  transform: scale(1.1); /* Scales the image to 1.1 times its size */
+}
+
+/* Right section styles */
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding-left: 20px;
+}
+
+/* Header styles */
+.right h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Paragraph text styles */
+.right p {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 320px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .right {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 20px;
+  }
+
+  .right p {
+    font-size: 12px;
+  }
+}

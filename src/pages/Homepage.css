@@ -79,53 +79,50 @@
 /*PROJECTS*/
 
 /* Section Styling */
-.projects-section {
+section.Project-section {
   padding: 40px;
+  position: relative;
   background-color: #ffffff;
   font-family: Arial, sans-serif;
   color: #333;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-right: 50px;
-  position: relative;
-
+  grid-template-columns: repeat(2,1fr);
 }
+
 /* Background image */
-.project-bgframe {
+.Project-bgframe {
 position: absolute;
 top: 0;
 left: 0;
+height: 90;
 object-fit: cover;
 
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  text-align: center;
-  margin-left: 30px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* Header Styling */
-.projects-header {
+.Project-header {
   margin-bottom: 40px;
   margin-right: 50px;
-  
+  width:100%;
 }
 
-.projects-header h1 {
+.Project-header h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #333;
 }
 
-.projects-header .intro-text {
+.Project-header .intro-text {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.projects-header .details-text {
+.Project-header .details-text {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -134,7 +131,7 @@ object-fit: cover;
   margin-right: auto;
 }
 
-.projects-header .see-more {
+.Project-header .see-more {
   display: inline-block;
   font-size: 1rem;
   color: #007bff;
@@ -143,35 +140,34 @@ object-fit: cover;
   margin-top: 10px;
 }
 
-.projects-header .see-more:hover {
+.Project-header .see-more:hover {
   text-decoration: underline;
 }
 
 /* Images Grid */
-.projects-images {
+.Project-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 10px; /* Space between grid items */
   margin-top: 20px;
+  height: 400px; /* Set the desired height */
+  width: auto; 
   
 }
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
 }
 
-.project-image {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-  height: auto;
-  border-radius: 10px;
+.image-container .Project-image {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  gap: 10px;
- 
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
 }
 
-.project-image:hover {
+.Project-image:hover {
   transform: scale(1.05);
 
 }
@@ -181,413 +177,721 @@ object-fit: cover;
 
 /* General Container Styling */
 .services-container {
-text-align: center;
-background-color: #ffffff; /* Light gray background */
-margin-bottom: 30px;
+  text-align: center;
+  background-color: #ffffff; /* Light gray background */
+  margin-bottom: 30px;
+  }
+  
+  /* Title Styling */
+  .services-title {
+  font-size: 2.5rem;
+  color: #333; /* Dark gray color */
+  margin-bottom: 40px;
+  font-weight: bold;
+  }
+  
+  /* Grid Layout */
+  .services-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 55px;
+  flex-wrap: wrap;  */
+  }
+  
+  /* Column Styling */
+  .services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  }
+  
+  /* Service Card Styling */
+  .service-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 15px 20px;
+  background: #ffffff; /* White background */
+  border: 1px solid #91d1c7; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  width: 50%;
+  text-align: left; /* Align content to the left */
+  }
+
+  
+  .service-card:hover {
+  transform: translateY(-5px); /* Hover animation */
+  }
+  
+  /* Icon and Title Row */
+  .service-header {
+  display: flex;
+  align-items: center;
+   gap: 10px; /*Space between icon and title */
+  margin-bottom: 10px; /* Space between title and description */
+  }
+  
+  /* Service Icon Styling */
+  .service-icon {
+  width: 40px; /* Adjust size of icons */
+  height: 40px;
+  object-fit: contain; /* Keep the icon aspect ratio */
+  }
+  
+  /* Service Title */
+  .service-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  }
+  
+  /* Service Description */
+  .service-description {
+  font-size: 0.9rem;
+  color: #777; /* Light gray for description text */
+  margin: 0;
+  line-height: 1.4; /* Adjust spacing between lines */
+  overflow: hidden; /* Hide overflow text */
+  
+  } 
+  
+  /* Center Image Styling */
+  .center-image {
+  position: relative;
+  /* width: 200px;
+  height: 200px; */
+  }
+/* PRODUCTS*/
+
+
+/*Section styling */
+.product-section {
+  padding: 20px;
+  background-color: #ffffff; /* Light gray background */
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-/* Title Styling */
-.services-title {
-font-size: 2.5rem;
-color: #333; /* Dark gray color */
-margin-bottom: 40px;
-font-weight: bold;
+.product-section h1 {
+  font-size: 3rem;
+  /* margin-bottom: 20px; */
+  color: #0b0404; /* Dark gray for the heading text */
+  margin-left: 4%;
+ 
 }
 
-/* Grid Layout */
-.services-grid {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-gap: 55px;
-flex-wrap: wrap; /* Make it responsive */
+/* Icon styling */
+.Producticon {
+  width: 5%; /* Adjust the icon size */
+  height: auto; /* Adjust the icon size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  /* vertical-align: middle; Align icon with text vertically */
+  border-radius: 100%; /* Circular icon */
+  background-color: #ffffff; /* Light gray background for the icon */
+  transition: transform 0.3s ease; /* Add hover animation */
+  position: relative;
 }
 
-/* Column Styling */
-.services-column {
-display: flex;
-flex-direction: column;
-gap: 20px;
+.Producticon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Flex container for products */
+.product-container {
+  display: flex;
+  justify-content: row; /* Center the products horizontally */
+  flex-wrap: wrap; /* Wrap products to the next line on smaller screens */
+  margin-left: 45px;
+}
+
+/* Individual product styling */
+.product {
+  width: 400px; /* Fixed width for each product */
+  text-align: center; /* Center align text */
+  border-radius: 15px; /* Rounded corners for the product box */
+  background-color: #ffffff; /* White background for each product */
+  padding: 15px;
+  margin-right: 10px;
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%; /* Fit the image to the product box width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-bottom: 10px; /* Space below the image */
+  
+  
+}
+
+/* Product name styling */
+.product p {
+  font-size: 1rem; /* Set font size */
+  font-weight: bold; /* Make text bold */
+  color: #333; /* Dark gray for text */
+  margin: 0; /* Remove default margin */
+}
+
+
+/*PROJECTS*/
+
+/* Section Styling */
+section.Projects-section {
+  padding: 40px;
+  display: grid;
+  position: relative;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  grid-template-columns: repeat(2,1fr);
+}
+
+/* Background image */
+.Projects-bgframe {
+position: absolute;
+top: 0;
+left: 0;
+height: 90;
+object-fit: cover;
+width: 40%;
+}
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 58%; */
+  margin-top: 10%;
+}
+
+/* Header Styling */
+.Projects-header {
+  margin-bottom: 40px;
+  margin-right: 50px;
+  width:100%;
+}
+
+.Projects-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Projects-header .intro-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 88%;
+}
+
+.Projects-header .details-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 89%;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.Projects-header .see-more {
+  display: inline-block;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Projects-header .see-more:hover {
+  text-decoration: underline;
+}
+
+/* Images Grid */
+.Projects-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Space between grid items */
+  margin-top: 20px;
+  height: 100%; /* Set the desired height */
+  width: auto; 
+  
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 
 }
 
-/* Service Card Styling */
-.service-card {
-display: flex;
-flex-direction: row;
-gap: 1rem;
-padding: 15px 20px;
-background: #ffffff; /* White background */
-border: 1px solid #91d1c7; /* Light border */
-border-radius: 10px; /* Rounded corners */
-transition: transform 0.3s ease; /* Smooth hover effect */
-width: 250px; /* Card width */
-text-align: left; /* Align content to the left */
+.image-container .Projects-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: auto;
 }
 
-.service-card:hover {
-transform: translateY(-5px); /* Hover animation */
+.Projects-image:hover {
+  transform: scale(1.05);
+
 }
 
-/* Icon and Title Row */
-.service-header {
-display: flex;
-align-items: center;
- gap: 10px; /*Space between icon and title */
-margin-bottom: 10px; /* Space between title and description */
-}
 
-/* Service Icon Styling */
-.service-icon {
-width: 40px; /* Adjust size of icons */
-height: 40px;
-object-fit: contain; /* Keep the icon aspect ratio */
-}
+/*Services*/
 
-/* Service Title */
-.service-title {
-font-size: 1.2rem;
-font-weight: bold;
-color: #333;
-margin: 0;
-}
-
-/* Service Description */
-.service-description {
-font-size: 0.9rem;
-color: #777; /* Light gray for description text */
-margin: 0;
-line-height: 1.4; /* Adjust spacing between lines */
-overflow: hidden; /* Hide overflow text */
-
-} 
-
-/* Center Image Styling */
-.center-image {
-position: relative;
-/* width: 200px;
-height: 200px; */
-}
-
+/* General Container Styling */
+.services-container {
+  text-align: center;
+  background-color: #ffffff; /* Light gray background */
+  margin-bottom: 30px;
+  }
+  
+  /* Title Styling */
+  .services-title {
+  font-size: 3rem;
+  color: #333; /* Dark gray color */
+  margin-bottom: 40px;
+  font-weight: bold;
+  }
+  
+  /* Grid Layout */
+  .services-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+  }
+  
+  /* Column Styling */
+  .services-column {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  }
+  
+  /* Service Card Styling */
+  .service-card {
+  display: flex;
+  flex-direction: row;
+  background: #91d1c708; /* White background */
+  border: 1px solid #91d1c7; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  text-align: left; /* Align content to the left */
+  margin-left: 25%;
+  }
+  
+  .service-card:hover {
+  transform: translateY(-5px); /* Hover animation */
+  }
+  
+  /* Icon and Title Row */
+  .service-header {
+  display: flex;
+  align-items: center;
+   gap: 10px; /*Space between icon and title */
+  margin-bottom: 10px; /* Space between title and description */
+  }
+  
+  /* Service Icon Styling */
+  .service-icon {
+  width: 40px; /* Adjust size of icons */
+  height: 40px;
+  object-fit: contain; /* Keep the icon aspect ratio */
+  }
+  
+  /* Service Title */
+  .service-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  }
+  
+  /* Service Description */
+  .service-description {
+  font-size: 0.9rem;
+  color: #777; /* Light gray for description text */
+  margin: 0;
+  line-height: 1.4; /* Adjust spacing between lines */
+  overflow: hidden; /* Hide overflow text */
+  
+  } 
+  
+  /* Center Image Styling */
+  .center-image {
+  position: relative;
+  /* width: 200px;
+  height: 200px; */
+  }
+  
 .group {
-width: 100%; /* Full width of the container */
-object-fit: contain; /* Maintain the aspect ratio */
-
+  width: 100%; /* Full width of the container */
+  object-fit: contain; /* Maintain the aspect ratio */
+  /* margin-left: -290%; */
 }
-
-
-
-
-
-/* Responsive Design   */ 
-@media (max-width: 768px) {
-.services-grid {
-  flex-direction: column; /* Stack items vertically on small screens */
-  gap: 40px;
-}
-
-.center-image {
-  margin: 20px auto; /* Center the image on small screens */
-}
-}
-
-@media (max-width: 480px) {
-.service-card {
-  width: 100%; /* Make cards full width on small screens */
-}
-}
-
-
-/*RESPONSIVE DESIGN*/
-
-/* Responsive Design for Mobile Devices */
-@media (max-width: 480px) {
-  /* General Styling */
-  .product-section, .projects-section, .services-container {
-    padding: 10px; /* Reduce padding for smaller screens */
-    margin: 0; /* Remove extra margins */
-  }
-
-  /* Products Section */
-  .product-container {
-    flex-direction: column; /* Stack products vertically */
-    align-items: center; /* Center-align content */
-  }
-
-  .product {
-    width: 90%; /* Make products take full width */
-    margin-bottom: 20px; /* Add spacing between products */
-  }
-
-  .Producticon {
-    width: 60px; /* Smaller icon size */
-    height: 60px;
-    left: 0; /* Adjust alignment */
-    margin: 0 auto 10px; /* Center icon with margin below */
-  }
-
-  /* Projects Section */
-  .projects-images {
-    grid-template-columns: 1fr; /* Single column layout */
-  }
-
-  .project-image {
-    width: 100%; /* Make images take full width */
-    margin: 10px auto; /* Center-align and add spacing */
-  }
-
-  .projects-header h1 {
-    font-size: 2rem; /* Adjust font size */
-  }
-
-  .projects-header .details-text {
-    font-size: 0.9rem; /* Smaller text size */
-    line-height: 1.3; /* Adjust spacing */
-  }
-
-  /* Services Section */
-  .services-grid {
-    flex-direction: column; /* Stack services vertically */
-    gap: 20px; /* Add space between services */
-  }
-
-  .service-card {
-    width: 100%; /* Full-width cards */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align text and icon */
-    text-align: center; /* Center-align content */
-  }
-
-  .service-header {
-    flex-direction: column; /* Stack icon and title vertically */
-    align-items: center; /* Center-align icon and title */
-  }
-
-  .service-icon {
-    width: 30px; /* Smaller icon size */
-    height: 30px;
-  }
-
-  .service-title {
-    font-size: 1rem; /* Adjust font size */
-  }
-
-  .service-description {
-    font-size: 0.8rem; /* Smaller description size */
-  }
-
-  /* Center Image */
-  .center-image {
-    width: 100%; /* Full-width image */
-    margin: 10px 0; /* Add spacing */
-  }
-
-  .group {
-    width: 100%; /* Full width */
-  }
-
-  /* Additional Tweaks */
-  h1, p, a {
-    font-size: smaller; /* Scale down font sizes */
-  }
-}
-/* Responsive Design for Low-Resolution Tablets and iPads */
-@media (min-width: 481px) and (max-width: 767px) {
-  /* Product Section */
-  .product-container {
-    flex-direction: column; /* Stack products vertically */
-    align-items: center; /* Center products */
-    margin-left: 0; /* Remove extra margin */
-  }
-
-  .product {
-    width: 90%; /* Make products wider to fit screen */
-    margin-bottom: 15px; /* Add space between stacked products */
-  }
-
-  .Producticon {
-    left: auto; /* Reset position */
-    margin-left: auto;
-    margin-right: auto; /* Center the icon */
-  }
-
-  /* Projects Section */
-  .projects-section {
-    grid-template-columns: 1fr; /* Single column for projects */
-    padding: 20px;
-  }
-
-  .projects-images {
-    grid-template-columns: 1fr; /* Single column for images */
-  }
-
-  .project-image {
-    width: 80%; /* Adjust image size */
-    margin: 0 auto; /* Center the images */
-  }
-
-  .projects-header h1 {
-    font-size: 2rem; /* Reduce font size */
-  }
-
-  /* Services Section */
-  .services-grid {
-    flex-direction: column; /* Stack services vertically */
-    gap: 20px; /* Adjust gap */
-  }
-
-  .service-card {
-    width: 90%; /* Make cards wider */
-    margin: 0 auto; /* Center the cards */
-  }
-
-  .service-icon {
-    width: 30px; /* Reduce icon size */
-    height: 30px;
-  }
-
-  .service-title {
-    font-size: 1rem; /* Adjust title font size */
-  }
-
-  .service-description {
-    font-size: 0.85rem; /* Adjust description font size */
-  }
-
-  /* Center Image */
-  .center-image {
-    width: 80%; /* Reduce width */
-    margin: 20px auto; /* Center image */
-  }
-
-  .group {
-    width: 100%; /* Full width */
-  }
-}
-/* Tablets and iPads (Portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Products Section */
-  .product-container {
-    justify-content: center; /* Center align products */
-    margin-left: 0; /* Adjust left margin for better alignment */
-  }
-
-  .product {
-    width: 45%; /* Adjust product width for two items per row */
-    margin: 10px auto; /* Add spacing and center products */
-  }
-
-  .Producticon {
-    left: unset; /* Remove absolute positioning for better layout */
-    margin: 0 auto 20px auto; /* Center the icon */
-  }
-
-  /* Projects Section */
-  .projects-section {
-    grid-template-columns: 1fr; /* Single column layout */
-    padding: 20px; /* Adjust padding */
-    margin-right: 0; /* Remove right margin */
-  }
-
-  .projects-images {
-    grid-template-columns: 1fr; /* One image per row */
-  }
-
-  .project-image {
-    width: 100%; /* Full width for images */
-    margin: 10px 0; /* Add spacing between images */
-  }
-
-  /* Services Section */
-  .services-grid {
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Adjust spacing */
-  }
-
-  .service-card {
-    width: 80%; /* Adjust card width */
-    margin: 0 auto; /* Center align the cards */
-  }
-
-  .service-header {
-    gap: 15px; /* Increase spacing between icon and title */
-  }
-
-  .service-description {
-    font-size: 1rem; /* Increase font size for readability */
-  }
-
-  /* Center Image */
-  .center-image {
-    width: 80%; /* Adjust size for the image */
-    margin: 20px auto; /* Center align */
-  }
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ 
+/* Responsive Styles for Mobile View */
+@media (min-width: 380px) and (max-width: 768px) {
   /* PRODUCTS Section */
-  .product-container {
-    justify-content: space-between; /* Distribute products evenly */
-    margin-left: 30px; /* Adjust margin for alignment */
-  }
-
-  .product {
-    width: 300px; /* Adjust product box width */
-    padding: 10px; /* Reduce padding for compact layout */
-  }
-
-  .Producticon {
-    left: 850px; /* Adjust position of the icon */
-    width: 70px; /* Slightly smaller icon */
-    height: 70px;
+  .product-section {
+    padding: 15px;
+    margin: 10px;
   }
 
   .product-section h1 {
-    font-size: 2.5rem; /* Adjust heading font size */
-    margin-left: 30px;
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+
+  .Producticon {
+    display: none;
+  }
+
+  .product-container {
+    flex-direction: column; /* Stack products vertically */
+    margin-left: 0;
+  }
+
+  .product {
+    width: 100%; /* Full width of the container */
+    margin: 10px 0;
+  }
+  .product-image{
+    width: 75%;
+    margin-right: 10%;
+  }
+  .product-p{
+    margin-right: 10%;
   }
 
   /* PROJECTS Section */
-  .projects-section {
-    padding: 30px; /* Adjust section padding */
-    grid-template-columns: 1fr; /* Single-column layout for better readability */
+  section.Projects-section {
+    display: block; /* Stack the sections */
+    /* padding: 20px; */
   }
 
-  .projects-header h1 {
-    font-size: 2rem; /* Adjust font size for the heading */
+  .grid-container {
+    margin-right: 0;
+    margin-top: 20px;
   }
 
-  .project-image {
-    width: 45%; /* Adjust image width */
-    margin: auto; /* Center align */
+  .Projects-bgframe {
+    /* width: 100%; Full width */
+    display: none;
+  }
+.Project-header{
+width: 100%;
+}
+
+  .Projects-header h1 {
+    font-size: 2rem;
+    /* text-align: center; */
+    }
+  .Project-header .intro-text{
+    margin-right: 10%;
   }
 
-  .projects-images {
-    grid-template-columns: 1fr 1fr; /* Maintain two columns */
-    gap: 15px; /* Increase gap for spacing */
+  .Projects-header .details-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .Projects-images {
+    grid-template-columns: 1fr; /* One column grid */
+    gap: 15px;
+  }
+
+  .Projects-image {
+    /* width: 100%;
+    height: auto; */
+    display: none;
   }
 
   /* SERVICES Section */
+  .services-container {
+    padding: 15px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
   .services-grid {
-    gap: 30px; /* Adjust gap for better spacing */
-    justify-content: space-around; /* Align services evenly */
+    flex-direction: column; /* Stack services vertically */
+    gap: 20px;
   }
 
   .service-card {
-    width: 200px; /* Reduce card width */
-    padding: 10px; /* Adjust padding */
+    width: 80%; /* Full width */
+    margin-left: 5%;
   }
 
-  .service-title {
-    font-size: 1rem; /* Reduce font size */
+  /* Center Image */
+  .center-image {
+    width: 50%; /* Full width */
+    /* height: auto; */
+  }
+}
+/* Responsive Styles for Tablet View */
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* PRODUCTS Section */
+  .product-section {
+    padding: 20px;
+    margin: 15px;
   }
 
-  .service-description {
-    font-size: 0.8rem; /* Adjust description font size */
+  .product-section h1 {
+    font-size: 2.5rem;
+    margin-left: 5%;
+  }
+
+ /* Icon styling */
+.Producticon {
+  width: 5%; /* Adjust the icon size */
+  height: auto; /* Adjust the icon size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  /* vertical-align: middle; Align icon with text vertically */
+  border-radius: 100%; /* Circular icon */
+  background-color: #ffffff; /* Light gray background for the icon */
+  transition: transform 0.3s ease; /* Add hover animation */
+  position: relative;
+  left: 74%;
+}
+
+.Producticon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+  .product-container {
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-evenly; /* Distribute products evenly */
+    margin-left: 0;
+  }
+
+  .product {
+    width: 45%; /* Two products per row */
+    margin: 15px 0;
+  }
+
+  .product-image {
+    width: 85%; /* Slightly smaller images */
+    margin: 0 auto 10px;
+  }
+
+  .product p {
+    font-size: 1.1rem; /* Adjust font size */
+    margin: 0;
+  }
+
+  /* PROJECTS Section */
+  section.Projects-section {
+    display: grid; /* Keep grid layout */
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 15px;
+  }
+
+  .grid-container {
+    margin: 0 auto;
+  }
+
+  .Projects-bgframe {
+    width: 40%; /* Adjust width of the background image */
+    display: block; /* Ensure it is visible */
+  }
+
+  .Projects-header h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin: 0 0 20px 5%;
+  }
+
+  .Projects-header .details-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    /* padding: 0 15px; */
+  }
+
+  .Projects-images {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+  }
+
+  .Projects-image {
+    width: 100%; /* Full width of grid item */
+    height: auto;
+  }
+
+  /* SERVICES Section */
+  .services-container {
+    padding: 20px;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around;
+    gap: 30px;
+  }
+  .services-column{
+    margin-right: -28%;
+  }
+  .service-card {
+    width: 45%; /* Two services per row */
+  }
+  .group{
+    width: 60%;
+  }
+  .center-image {
+    /* width: 70%; */
+    margin: 0 auto;
+  }
+}
+/* Responsive Styles for Larger Tablets and Small Desktops */
+@media (min-width: 5000px) and (max-width: 5000px) {
+  /* PRODUCTS Section */
+  .product-section {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .product-section h1 {
+    font-size: 2.5rem;
+    margin-left: 5%;
+  }
+
+  /* Icon styling */
+.Producticon {
+  width: 5%; /* Adjust the icon size */
+  height: auto; /* Adjust the icon size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  /* vertical-align: middle; Align icon with text vertically */
+  border-radius: 100%; /* Circular icon */
+  background-color: #ffffff; /* Light gray background for the icon */
+  transition: transform 0.3s ease; /* Add hover animation */
+  position: relative;
+  left: 74%;
+}
+
+.Producticon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+  .product-container {
+    display: flex;
+    justify-content: space-evenly; /* Distribute products evenly */
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .product {
+    width: 30%; /* Two products per row */
+    margin: 15px 0;
+  }
+
+  .product-image {
+    /* width: 65%;  */
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+  }
+  .product-image:hover {
+   
+   transform: scale(1.1); 
+ }
+
+  .product p {
+    font-size: 1.1rem; /* Adjust font size */
+    margin: 0;
+  }
+
+  /* PROJECTS Section */
+  section.Projects-section {
+    display: grid; /* Keep grid layout */
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 15px;
+  }
+
+  .grid-container {
+    margin: 0 auto;
+  }
+
+  .Projects-bgframe {
+    width: 40%; /* Adjust width of the background image */
+    display: block; /* Ensure it is visible */
+  }
+  
+
+  .Projects-header h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin: 0 0 20px 5%;
+  }
+
+  .Projects-header .details-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    /* padding: 0 15px; */
+  }
+
+  .Projects-images {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    transition: transform 0.3s ease;
+
+  }
+  .Projects-images:hover {
+   transform: scale(1.1); 
+ }
+
+  .Projects-image {
+    width: 100%; /* Full width of grid item */
+    height: auto;
+    transition: transform 0.3s ease;
+
+  }
+  .Projects-image:hover {
+    transform: scale(1.1); 
+  }
+
+  /* SERVICES Section */
+  .services-container {
+    padding: 20px;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around;
+    gap: 30px;
+  }
+  .services-column{
+    display: flex;
+  }
+  .service-card {
+    /* width: 50%;  */
+    margin-left: 8%;
   }
 
   .center-image {
-    width: 300px; /* Adjust image size */
-    margin: 10px auto; /* Center and reduce margins */
+    width: 25%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
   }
+  .center-image:hover {
+   transform: scale(1.1); 
+ }
 }
+

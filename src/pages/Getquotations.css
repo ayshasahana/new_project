@@ -1,0 +1,326 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5%;
+  font-family: Arial, sans-serif;
+  /* background-color: #f8f9fa; */
+  height: 226%;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.left-section h2 {
+  font-weight:400;
+  font-size: 2.5rem;
+  color: #000000;
+  margin: 0;
+  line-height: 1.5;
+}
+.left-section p {
+  /* font-weight:400; */
+  font-family: Arial;
+  font-size:18px;
+  color:  #747474;
+  margin-right:20%;
+  line-height: 1.5;
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.enquiry-box {
+  width: 90%;
+  background-color: #fff;
+  padding: 4%;
+  border: #a32323;
+  border-style: solid;
+  border: 2px solid #cccccc;
+  border-radius: 2%;
+  box-sizing: border-box;
+}
+
+.enquiry-box h2 {
+  text-align: left;
+  margin-bottom: 3%;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-bottom: 1%;
+}
+
+.input-row .MuiTextField-root {
+  /* flex: 1; Ensures equal width for all TextField components */
+}
+
+.input-row .MuiFormControl-root {
+  /* width: 100%; Ensures the input adornment doesn't affect the width of the text field */
+}
+
+.input-row .MuiInputBase-root {
+  /* width: 100%; Ensures that input inside the TextField has 100% width */
+}
+.input-box {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  font-size: 1rem;
+}
+
+
+.checkbox-row {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures spacing between checkbox/label and image */
+  gap: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding:2% ;
+  border: 2px solid #ccc; /* Add border to create box */
+  border-radius: 3%;
+  background-color: #f0f0f0; /* Optional: Background color for the box */
+}
+
+.checkbox-row img {
+  width: 20%; /* Adjust the size as needed */
+  height: 20%; /* Adjust the size as needed */
+  margin-left: auto; /* Pushes the image to the far right */
+}
+.checkbox-row input[type="checkbox"] {
+width: 10%; /* Adjust the width of the checkbox */
+height: 10%; /* Adjust the height of the checkbox */
+transform: scale(1.5); /* Scales the checkbox to make it larger */
+margin-right: 3%; /* Add some space between the checkbox and the label */
+cursor: pointer; /* Changes the cursor to a pointer for better UX */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 2%;
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #138496;
+}
+.chip-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows chips to wrap */
+  gap: 3%; /* Adds space between chips */
+  max-width: 100%; /* Ensures it doesn't exceed the container's width */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  padding-bottom: 2%; /* Provides space at the bottom */
+}
+
+.chip-container .MuiChip-root {
+  margin-bottom: 2%; /* Adds spacing between chips */
+  max-width: 100%; /* Ensures no chip exceeds the container */
+}
+
+/*............................. tabviwe ............................... */
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    padding: 3%; /* Adjust padding */
+  }
+
+  .left-section, .right-section {
+    flex: unset; /* Remove flex */
+    width: 100%; /* Take full width */
+    margin-right: 0; /* Reset margin */
+  }
+
+  .enquiry-box {
+    width: 100%; /* Full width */
+    padding: 5%; /* Increase padding for better usability */
+  }
+
+  .input-row {
+    
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10%; /* Add space between inputs */
+    margin-bottom: 0;
+  }
+  .input-row .MuiTextField-root {
+    width: 100%; /* Full width for TextField */
+    margin-bottom: 2%; /* Add margin-bottom for spacing */
+  }
+
+
+  .checkbox-row input[type="checkbox"] {
+    width: 5%; /* Adjust the width of the checkbox */
+    height: 5%; /* Adjust the height of the checkbox */
+    transform: scale(1.5); /* Scales the checkbox to make it larger */
+    margin-right: 1%; /* Add some space between the checkbox and the label */
+    cursor: pointer; /* Changes the cursor to a pointer for better UX */
+  }
+
+  .checkbox-row {
+    width: 90%; /* Full width */
+    display: flex; /* Ensure flexbox layout is applied */
+    flex-direction: row; /* Keep checkbox and image side by side */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: auto auto 15px auto;  /* Align to the left */
+  }
+  .checkbox-row img {
+    width: 10%; 
+    height: auto;
+  }
+  .submit-button {
+    padding: 3%; /* Increase padding */
+  }
+  .chip-container {
+    gap: 5%; /* Adjust chip spacing */
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 5%; /* Adjust padding */
+  }
+
+  .left-section, .right-section {
+    flex: unset; /* Remove flex */
+    width: 100%; /* Take full width */
+    margin: 0; /* Reset margins */
+  }
+
+  .left-section h2 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  .left-section p {
+    font-size: 16px; /* Adjust font size */
+    margin-right: 0; /* Remove margin */
+  }
+
+  .enquiry-box {
+    width: 100%; /* Full width */
+    padding: 2%; /* Increase padding for better readability */
+  }
+
+  .input-row {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15%; /* Add more space between inputs */
+  }
+
+  .input-row .MuiTextField-root {
+  width: 100%; /* Full width for TextField */
+  margin-bottom: 12px; /* Add margin-bottom for spacing */
+}
+  .checkbox-row {
+    width: 90%; /* Full width */
+    display: flex; /* Ensure flexbox layout is applied */
+    flex-direction: row; /* Keep checkbox and image side by side */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: auto auto 15px auto;      
+  }
+
+  .checkbox-row img {
+    width: 15%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
+
+  .submit-button {
+    padding: 4%; /* Increase padding for better touch experience */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .chip-container {
+    gap: 10%; /* Adjust chip spacing */
+    padding-bottom: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row; /* Keep sections side by side */
+    padding: 5%; /* Ensure comfortable spacing */
+  }
+
+  .left-section {
+    flex: 1; /* Occupy half the container width */
+    padding: 2%; /* Add padding for better spacing */
+  }
+
+  .left-section h2 {
+    font-size: 3rem; /* Increase font size for larger screens */
+  }
+
+  .left-section p {
+    font-size: 20px; /* Slightly larger text for readability */
+    margin-right: 15%; /* Add margin for aesthetic spacing */
+  }
+
+  .right-section {
+    flex: 1; /* Occupy the other half of the container */
+    margin-right: 5%; /* Maintain some spacing */
+  }
+
+  .enquiry-box {
+    width: 90%; /* Slightly reduce width for balanced design */
+    margin: 0 auto; /* Center align the box */
+    padding: 3%; /* Adjust padding */
+  }
+
+  .input-row {
+    display: flex; /* Keep inputs side by side */
+    gap: 1%; /* Maintain spacing between inputs */
+    margin-bottom: 2%; /* Adjust vertical spacing */
+  }
+  .input-row .PhoneInput inputStyle {
+    width: 170px !important; /* Full width on mobile view */
+  }
+
+
+  .input-row .MuiTextField-root {
+    flex: 1; /* Equal width for all TextField components */
+  }
+
+  .checkbox-row {
+    width: 60%; /* Adjust the box width */
+    gap: 3%; /* Reduce spacing for large screens */
+    margin-top: 2%; /* Adjust spacing */
+  }
+
+  .checkbox-row img {
+    width: 15%; /* Resize image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .chip-container {
+    gap: 2%; /* Reduce gap between chips */
+    padding-bottom: 2%;
+  }
+
+  .submit-button {
+    font-size: 1.2rem; /* Slightly larger button text */
+    padding: 1.5%; /* Adjust padding */
+  }
+}
